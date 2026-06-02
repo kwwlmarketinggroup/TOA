@@ -1,0 +1,7 @@
+This site stores live content in Firestore:
+
+Collection: site_content
+Document: taste-of-africa
+Field: content
+
+You do not need public Firestore write rules because the public website talks to the Netlify Function, and the Netlify Function uses your Firebase service account securely on the server.

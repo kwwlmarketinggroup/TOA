@@ -1,0 +1,8 @@
+{
+  "name": "taste-of-africa-firebase-cms",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "firebase-admin": "^12.7.0"
+  }
+}
