@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Taste of Africa Restaurant | Syracuse, NY</title>
+<meta name="description" content="The Taste of Africa Restaurant in Syracuse, NY serving Central and East African comfort food for dine-in, carry-out, and catering." />
+<style>
+:root{--cream:#fff8e8;--paper:#fffdf5;--sand:#f3dfb5;--brown:#24140b;--brown2:#5b2b16;--orange:#d65a1f;--gold:#f6b23e;--green:#2f6b3f;--muted:#76553d;--leaf:#204d2d;--shadow:0 24px 70px rgba(38,22,13,.16)}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--brown)}a{text-decoration:none;color:inherit}.container{max-width:1180px;margin:auto;padding:0 22px}img{max-width:100%;display:block}
+header{position:sticky;top:0;z-index:50;background:rgba(255,248,232,.95);backdrop-filter:blur(14px);border-bottom:1px solid rgba(38,22,13,.12);box-shadow:0 10px 35px rgba(38,22,13,.06)}.top-strip{background:linear-gradient(90deg,var(--green),var(--gold),var(--orange),var(--brown));color:#fff;text-align:center;text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:900;padding:8px}
+.nav{min-height:80px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px}.brand-main{font-size:29px;font-weight:1000;letter-spacing:-.06em}.brand-main span{font-family:Georgia,serif;font-style:italic;color:var(--orange)}.brand-sub{border-left:4px solid var(--gold);padding-left:9px;margin-top:5px;font-size:11px;text-transform:uppercase;letter-spacing:.22em;font-weight:900;color:#5b2b16}
+nav{display:flex;gap:8px;background:rgba(255,255,255,.55);border:1px solid rgba(91,43,22,.14);padding:8px;border-radius:999px}nav a{padding:11px 15px;border-radius:999px;text-transform:uppercase;font-size:12px;letter-spacing:.13em;font-weight:1000;color:#5b2b16}nav a:hover,nav a.active{background:var(--orange);color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 24px;border-radius:999px;font-weight:1000;white-space:nowrap}.btn.green{background:var(--green);color:#fff;box-shadow:0 12px 28px rgba(47,107,63,.18)}.btn.gold{background:var(--gold);color:var(--brown)}.btn.outline{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);color:#fff}.btn.light{border:1px solid rgba(91,43,22,.25);background:white}.header-cta{justify-self:end}
+.page{display:none}.page.active{display:block}.hero{position:relative;min-height:78vh;display:flex;align-items:center;background:var(--brown);color:#fff;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,22,13,.94),rgba(38,22,13,.72),rgba(38,22,13,.35)),var(--hero-img) center/cover;opacity:.96}.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center;padding:80px 22px}.pill{display:inline-flex;padding:10px 15px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.12);font-weight:900;color:#ffe5aa;margin-bottom:24px}
+h1{font-size:clamp(56px,9vw,126px);line-height:.86;letter-spacing:-.075em;margin:0;font-weight:1000}h1 span{display:block;color:var(--gold);font-family:Georgia,serif;font-style:italic;font-weight:700}.lead{font-size:26px;line-height:1.35;color:#fff3d0;font-weight:800;max-width:620px}.actions{display:flex;gap:14px;flex-wrap:wrap}.mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px}.mini-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:17px;font-weight:900;color:#fff}
+.photo{position:relative;border-radius:38px;overflow:hidden;min-height:460px;box-shadow:0 28px 80px rgba(0,0,0,.25)}.photo img{width:100%;height:100%;min-height:460px;object-fit:cover;display:block}.photo-label{position:absolute;left:18px;right:18px;bottom:18px;background:rgba(38,22,13,.78);color:#fff;border-radius:24px;padding:18px}.photo-label strong{display:block;font-size:24px}.photo-label span{color:#ffe5aa;font-weight:900;font-size:14px}
+section{padding:82px 0}.section-head{margin-bottom:34px}.kicker{text-transform:uppercase;letter-spacing:.26em;color:var(--orange);font-size:13px;font-weight:1000}.title{font-size:clamp(40px,5vw,68px);line-height:.95;letter-spacing:-.05em;margin:10px 0;font-weight:1000}.sub{font-size:18px;line-height:1.7;color:var(--muted);max-width:760px}.sand{background:var(--sand)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid rgba(38,22,13,.1);border-radius:32px;overflow:hidden;box-shadow:0 10px 30px rgba(38,22,13,.06)}.stripe{height:12px;background:linear-gradient(90deg,var(--green),var(--gold),var(--orange))}.card-body{padding:28px}.num{font-size:60px;color:var(--gold);font-weight:1000;letter-spacing:-.08em}.card h3{font-size:30px;margin:10px 0}.tag{color:var(--orange);text-transform:uppercase;letter-spacing:.16em;font-weight:1000;font-size:12px}.card p{color:var(--muted);line-height:1.6}
+.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.menu-box{background:#fff;border:1px solid rgba(38,22,13,.1);border-radius:34px;padding:30px;box-shadow:0 10px 34px rgba(38,22,13,.06)}.menu-box.dark{background:var(--brown);color:#fff}.menu-box h3{font-size:34px;margin:0 0 24px}.menu-item{border-bottom:1px solid rgba(38,22,13,.1);padding-bottom:18px;margin-bottom:18px}.menu-box.dark .menu-item{border-color:rgba(255,255,255,.14)}.menu-item:last-child{border-bottom:0;margin-bottom:0}.menu-row{display:flex;justify-content:space-between;gap:14px;font-size:18px;font-weight:1000}.menu-row span:last-child{color:var(--orange)}.menu-box.dark .menu-row span:last-child{color:var(--gold)}.menu-item p{color:var(--muted);line-height:1.55}.menu-box.dark .menu-item p{color:rgba(255,255,255,.78)}.menu-photo{width:100%;height:220px;object-fit:cover;border-radius:22px;margin:0 0 16px;box-shadow:0 10px 26px rgba(38,22,13,.10)}.menu-photo.tall{height:300px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}.dark-box{background:var(--brown);color:#fff;border-radius:38px;padding:30px}.dark-box p{color:rgba(255,255,255,.84);line-height:1.7}.reason{background:#fff;border-radius:28px;padding:24px;margin-bottom:14px}.reason p{color:var(--muted)}.about-story-img{width:100%;max-height:640px;object-fit:cover;border-radius:34px;box-shadow:0 22px 60px rgba(38,22,13,.18);border:10px solid rgba(255,255,255,.75)}
+.visit-grid{display:grid;grid-template-columns:1fr .9fr;gap:24px}.white-card,.hours{border-radius:38px;padding:34px}.white-card{background:#fff}.hours{background:var(--brown);color:#fff}.hour-row{display:flex;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.13);padding:13px 0}.hour-row strong{color:var(--gold)}footer{background:var(--brown);color:rgba(255,255,255,.75);padding:28px 0}footer .container{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:850px){nav{display:none}.nav{grid-template-columns:1fr auto}.brand-main{font-size:23px}.hero-grid,.menu-grid,.split,.visit-grid,.cards{grid-template-columns:1fr}.mini-grid{grid-template-columns:1fr}.photo,.photo img{min-height:360px}.menu-photo,.menu-photo.tall{height:240px}}
+
+.admin-grid{display:grid;grid-template-columns:260px 1fr;gap:24px}.admin-sidebar,.admin-panel{background:#fff;border:1px solid rgba(38,22,13,.1);border-radius:28px;padding:24px;box-shadow:0 10px 30px rgba(38,22,13,.06)}.admin-sidebar .btn{width:100%;margin:0 0 10px}.field{display:grid;gap:7px;margin-bottom:15px}.field label{font-weight:1000}.field input,.field textarea{width:100%;border:1px solid rgba(38,22,13,.18);border-radius:14px;padding:12px;font:inherit;background:#fff}.field textarea{min-height:120px}.notice{border-radius:20px;background:#fff3c7;border:1px solid #f6d36f;padding:16px;line-height:1.55;color:#5b3a08;margin-bottom:18px}.analytics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stat{background:var(--paper);border-radius:22px;padding:20px;border:1px solid rgba(38,22,13,.1)}.stat strong{display:block;font-size:34px}@media(max-width:850px){.admin-grid,.analytics-grid{grid-template-columns:1fr}}
+
+.story-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
+.story-copy{background:var(--brown);color:#fff;border-radius:38px;padding:34px;box-shadow:0 20px 55px rgba(38,22,13,.18)}
+.story-copy p{color:rgba(255,255,255,.86);line-height:1.75;font-size:17px}
+.family-photo{width:100%;height:100%;min-height:520px;object-fit:cover;border-radius:38px;box-shadow:0 24px 70px rgba(38,22,13,.18);border:10px solid rgba(255,255,255,.75)}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.value-card{background:#fff;border:1px solid rgba(38,22,13,.1);border-radius:28px;padding:26px;box-shadow:0 10px 30px rgba(38,22,13,.06)}
+.value-card h3{font-size:26px;margin:0 0 10px;letter-spacing:-.04em}
+.value-card p{color:var(--muted);line-height:1.6;margin:0}
+.menu-reference-card{background:var(--paper);border:1px solid rgba(38,22,13,.1);border-radius:34px;padding:22px;margin-bottom:22px;box-shadow:0 10px 34px rgba(38,22,13,.06)}
+.menu-reference-card img{width:100%;border-radius:24px;box-shadow:0 12px 32px rgba(38,22,13,.12)}
+.menu-reference-card p{color:var(--muted);line-height:1.6}
+@media(max-width:850px){.story-hero-grid,.values-grid{grid-template-columns:1fr}.family-photo{min-height:360px}}
+
+.side-photo{
+  width:100%;
+  height:210px;
+  object-fit:cover;
+  border-radius:22px;
+  margin:0 0 16px;
+  box-shadow:0 10px 26px rgba(38,22,13,.10);
+  background:#eee;
+}
+.about-exact-grid{
+  display:grid;
+  grid-template-columns:.95fr 1.05fr;
+  gap:34px;
+  align-items:start;
+}
+.about-exact-copy{
+  background:#fff;
+  border:1px solid rgba(38,22,13,.1);
+  border-radius:34px;
+  padding:32px;
+  box-shadow:0 14px 38px rgba(38,22,13,.08);
+}
+.about-exact-copy h2{
+  font-family:Georgia,serif;
+  font-style:italic;
+  font-size:34px;
+  line-height:1.1;
+  margin:0 0 18px;
+  color:var(--brown);
+}
+.about-exact-copy p{
+  color:var(--muted);
+  font-size:17px;
+  line-height:1.72;
+}
+.about-exact-copy .quote{
+  font-family:Georgia,serif;
+  font-style:italic;
+  color:#4f3828;
+}
+.about-map-img{
+  width:100%;
+  border-radius:34px;
+  box-shadow:0 22px 60px rgba(38,22,13,.18);
+  border:10px solid rgba(255,255,255,.8);
+}
+@media(max-width:850px){
+  .about-exact-grid{grid-template-columns:1fr}
+  .side-photo{height:230px}
+}
+
+.reviews-section{background:var(--brown);color:#fff}
+.reviews-section .title{color:#fff}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.review-card{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.1);border-radius:30px;padding:28px;box-shadow:0 14px 40px rgba(0,0,0,.12)}
+.review-stars{color:var(--gold);font-size:21px;letter-spacing:2px;margin-bottom:12px}
+.review-card p{color:rgba(255,255,255,.86);line-height:1.65;font-size:17px}
+.review-card strong{display:block;color:var(--gold);text-transform:uppercase;letter-spacing:.16em;font-size:12px;margin-top:18px}
+@media(max-width:850px){.reviews-grid{grid-template-columns:1fr}}
+
+.admin-grid{display:grid;grid-template-columns:260px 1fr;gap:24px}
+.admin-sidebar,.admin-panel{background:#fff;border:1px solid rgba(38,22,13,.1);border-radius:28px;padding:24px;box-shadow:0 10px 30px rgba(38,22,13,.06)}
+.admin-sidebar .btn{width:100%;margin-bottom:10px}
+.field{display:grid;gap:7px;margin-bottom:15px}.field label{font-weight:1000}.field input,.field textarea{width:100%;border:1px solid rgba(38,22,13,.18);border-radius:14px;padding:12px;font:inherit;background:#fff}.field textarea{min-height:120px}
+.notice{border-radius:20px;background:#fff3c7;border:1px solid #f6d36f;padding:16px;line-height:1.55;color:#5b3a08;margin-bottom:18px}
+.upload-preview{display:grid;grid-template-columns:180px 1fr;gap:16px;align-items:center;margin:12px 0 18px;padding:14px;border:1px solid rgba(38,22,13,.1);border-radius:20px;background:#fffdf5}
+.upload-preview img{width:180px;height:120px;object-fit:cover;border-radius:16px;background:#eee}
+.analytics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stat{background:var(--paper);border-radius:22px;padding:20px;border:1px solid rgba(38,22,13,.1)}.stat strong{display:block;font-size:34px}
+@media(max-width:850px){.admin-grid,.analytics-grid,.upload-preview{grid-template-columns:1fr}.upload-preview img{width:100%;height:200px}}
+
+.rating-strip{
+  background:var(--sand);
+  border-top:1px solid rgba(38,22,13,.1);
+  border-bottom:1px solid rgba(38,22,13,.1);
+  padding:26px 0;
+}
+.rating-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:14px;
+  align-items:stretch;
+}
+.rating-card{
+  background:#fff;
+  border:1px solid rgba(38,22,13,.1);
+  border-radius:26px;
+  padding:22px;
+  box-shadow:0 10px 30px rgba(38,22,13,.06);
+}
+.rating-card strong{
+  display:block;
+  font-size:34px;
+  letter-spacing:-.05em;
+  color:var(--brown);
+}
+.rating-card span{
+  display:block;
+  color:var(--muted);
+  font-weight:900;
+  line-height:1.45;
+}
+.google-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  border-radius:999px;
+  padding:9px 13px;
+  background:rgba(246,178,62,.22);
+  color:var(--brown);
+  font-weight:1000;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:11px;
+  margin-bottom:10px;
+}
+@media(max-width:850px){.rating-grid{grid-template-columns:1fr}}
+
+.catering-gallery{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:20px;
+  margin-top:34px;
+}
+.catering-feature{
+  position:relative;
+  overflow:hidden;
+  min-height:520px;
+  border-radius:38px;
+  box-shadow:0 24px 65px rgba(38,22,13,.18);
+  background:var(--brown);
+}
+.catering-feature img,.catering-small img,.inside-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.catering-small-stack{
+  display:grid;
+  gap:20px;
+}
+.catering-small{
+  position:relative;
+  overflow:hidden;
+  min-height:250px;
+  border-radius:30px;
+  box-shadow:0 14px 40px rgba(38,22,13,.12);
+  background:var(--brown);
+}
+.catering-caption{
+  position:absolute;
+  left:18px;
+  right:18px;
+  bottom:18px;
+  padding:18px;
+  border-radius:22px;
+  color:#fff;
+  background:rgba(38,22,13,.78);
+  backdrop-filter:blur(10px);
+}
+.catering-caption strong{display:block;font-size:24px;letter-spacing:-.04em}
+.catering-caption span{display:block;color:#ffe5aa;font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin-top:4px}
+.inside-section{background:var(--paper)}
+.inside-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:34px;
+  align-items:center;
+}
+.inside-photo{
+  overflow:hidden;
+  min-height:470px;
+  border-radius:38px;
+  box-shadow:0 24px 65px rgba(38,22,13,.16);
+  border:10px solid rgba(255,255,255,.8);
+}
+@media(max-width:850px){
+  .catering-gallery,.inside-grid{grid-template-columns:1fr}
+  .catering-feature,.inside-photo{min-height:360px}
+  .catering-small{min-height:230px}
+}
+
+.home-only-reviews{background:var(--brown);color:#fff}
+.home-only-reviews .title{color:#fff}
+.home-only-reviews .sub{color:rgba(255,255,255,.76)}
+.home-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.home-review-card{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.1);border-radius:30px;padding:28px;box-shadow:0 14px 40px rgba(0,0,0,.12)}
+.home-review-stars{color:var(--gold);font-size:21px;letter-spacing:2px;margin-bottom:12px}
+.home-review-card p{color:rgba(255,255,255,.86);line-height:1.65;font-size:17px}
+.home-review-card strong{display:block;color:var(--gold);text-transform:uppercase;letter-spacing:.16em;font-size:12px;margin-top:18px}
+.home-inside-section{background:var(--paper)}
+.home-inside-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:center}
+.home-inside-photo{overflow:hidden;min-height:470px;border-radius:38px;box-shadow:0 24px 65px rgba(38,22,13,.16);border:10px solid rgba(255,255,255,.8)}
+.home-inside-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.catering-main-photo{position:relative;overflow:hidden;border-radius:38px;min-height:560px;margin-top:34px;box-shadow:0 24px 65px rgba(38,22,13,.18);background:var(--brown)}
+.catering-main-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.catering-main-caption{position:absolute;left:22px;right:22px;bottom:22px;padding:20px;border-radius:24px;color:#fff;background:rgba(38,22,13,.78);backdrop-filter:blur(10px)}
+.catering-main-caption strong{display:block;font-size:27px;letter-spacing:-.04em}
+.catering-main-caption span{display:block;color:#ffe5aa;font-weight:900;text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin-top:5px}
+.congo-visual{width:100%;min-height:480px;object-fit:cover;border-radius:38px;box-shadow:0 24px 65px rgba(38,22,13,.16);border:10px solid rgba(255,255,255,.8)}
+@media(max-width:850px){
+  .home-review-grid,.home-inside-grid{grid-template-columns:1fr}
+  .home-inside-photo,.catering-main-photo{min-height:340px}
+}
+
+.admin-shell{display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:start}
+.admin-sidebar,.admin-panel{background:#fff;border:1px solid rgba(38,22,13,.12);border-radius:28px;padding:24px;box-shadow:0 10px 30px rgba(38,22,13,.06)}
+.admin-sidebar .btn{width:100%;margin-bottom:10px;justify-content:center}
+.admin-small{font-size:13px;color:var(--muted);line-height:1.5;margin-top:10px}
+.field{display:grid;gap:7px;margin-bottom:15px}
+.field label{font-weight:1000;color:var(--brown)}
+.field input,.field textarea,.field select{width:100%;border:1px solid rgba(38,22,13,.18);border-radius:14px;padding:12px;font:inherit;background:#fff}
+.field textarea{min-height:120px}
+.notice{border-radius:20px;background:#fff3c7;border:1px solid #f6d36f;padding:16px;line-height:1.55;color:#5b3a08;margin-bottom:18px}
+.admin-tabs-title{font-size:30px;margin:0 0 12px;letter-spacing:-.04em}
+.admin-item{border:1px solid rgba(38,22,13,.1);background:var(--paper);border-radius:22px;padding:18px;margin-bottom:14px}
+.admin-item h4{margin:0 0 12px;font-size:18px}
+.upload-row{display:grid;grid-template-columns:170px 1fr;gap:16px;align-items:center}
+.upload-row img{width:170px;height:115px;object-fit:cover;border-radius:16px;background:#eee;border:1px solid rgba(38,22,13,.1)}
+.upload-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.analytics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.stat{background:var(--paper);border-radius:22px;padding:20px;border:1px solid rgba(38,22,13,.1)}
+.stat strong{display:block;font-size:34px}
+.admin-savebar{position:sticky;bottom:12px;margin-top:18px;background:rgba(255,248,232,.95);backdrop-filter:blur(10px);border:1px solid rgba(38,22,13,.12);border-radius:22px;padding:14px;display:flex;gap:10px;flex-wrap:wrap}
+@media(max-width:850px){.admin-shell,.upload-row,.analytics-grid{grid-template-columns:1fr}.upload-row img{width:100%;height:210px}}
+
+.entree-grid-clean{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.entree-card-clean{
+  background:#fff;
+  border:1px solid rgba(38,22,13,.1);
+  border-radius:30px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(38,22,13,.06);
+}
+.entree-card-clean img{
+  width:100%;
+  height:235px;
+  object-fit:cover;
+  display:block;
+}
+.entree-card-clean .body{padding:22px}
+.entree-card-clean h4{
+  font-size:24px;
+  margin:0 0 7px;
+  letter-spacing:-.04em;
+}
+.entree-card-clean .mini-tag{
+  display:inline-flex;
+  color:var(--orange);
+  font-weight:1000;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:11px;
+  margin-bottom:10px;
+}
+.entree-card-clean p{
+  color:var(--muted);
+  line-height:1.55;
+  margin:0;
+}
+.sides-list-clean{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin-top:18px;
+}
+.side-pill-clean{
+  background:var(--paper);
+  border:1px solid rgba(38,22,13,.1);
+  border-radius:20px;
+  padding:16px;
+  box-shadow:0 8px 24px rgba(38,22,13,.05);
+}
+.side-pill-clean strong{display:block;font-size:18px;letter-spacing:-.03em}
+.side-pill-clean span{display:block;margin-top:5px;color:var(--muted);font-size:14px;line-height:1.4}
+.about-story-horizontal{
+  position:relative;
+  overflow:hidden;
+  border-radius:42px;
+  min-height:620px;
+  display:flex;
+  align-items:center;
+  box-shadow:0 26px 70px rgba(38,22,13,.18);
+  background:var(--brown);
+}
+.about-story-horizontal::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(38,22,13,.94),rgba(38,22,13,.78),rgba(38,22,13,.28)), var(--about-story-img) center/cover;
+  opacity:.96;
+}
+.about-story-panel{
+  position:relative;
+  z-index:1;
+  width:min(760px, calc(100% - 44px));
+  margin:42px;
+  background:rgba(255,248,232,.94);
+  border:1px solid rgba(255,255,255,.5);
+  backdrop-filter:blur(12px);
+  border-radius:34px;
+  padding:34px;
+  box-shadow:0 20px 55px rgba(0,0,0,.18);
+}
+.about-story-panel h2{
+  font-family:Georgia,serif;
+  font-style:italic;
+  font-size:38px;
+  line-height:1.05;
+  margin:0 0 18px;
+  color:var(--brown);
+}
+.about-story-panel p{color:#5b2b16;line-height:1.68;font-size:16px}
+.about-story-panel .quote{font-family:Georgia,serif;font-style:italic}
+@media(max-width:950px){
+  .entree-grid-clean{grid-template-columns:1fr 1fr}
+  .sides-list-clean{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+  .entree-grid-clean,.sides-list-clean{grid-template-columns:1fr}
+  .about-story-horizontal{min-height:auto}
+  .about-story-panel{margin:20px;width:calc(100% - 40px);padding:24px}
+}
+
+/* Final polish: clean color system and page flow */
+body{background:linear-gradient(180deg,var(--cream),#fffaf0 45%,var(--cream));color:var(--brown)}
+header{background:rgba(255,248,232,.96)!important;border-bottom:1px solid rgba(38,22,13,.10)!important}
+.top-strip{background:linear-gradient(90deg,var(--leaf),var(--green),var(--gold),var(--orange))!important}
+nav{background:rgba(255,255,255,.72)!important;border-color:rgba(91,43,22,.12)!important}
+nav a:hover,nav a.active{background:var(--green)!important;color:#fff!important}
+.btn.green{background:var(--green)!important}.btn.gold{background:var(--gold)!important}
+.menu-box,.card,.white-card,.admin-panel,.admin-sidebar,.rating-card,.value-card,.reason{background:#fffdf8!important;border-color:rgba(38,22,13,.10)!important}
+.dark-box,.hours,.reviews-section,.home-only-reviews{background:linear-gradient(135deg,var(--brown),#3b2112)!important}
+.kicker{color:var(--orange)!important}
+.clean-about-wrap{background:var(--paper);padding:90px 0}
+.clean-about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center}
+.clean-about-copy{background:#fff;border:1px solid rgba(38,22,13,.10);border-radius:38px;padding:36px;box-shadow:0 18px 55px rgba(38,22,13,.10)}
+.clean-about-copy h2{font-size:clamp(42px,5vw,76px);line-height:.94;margin:0 0 18px;color:var(--brown);letter-spacing:-.055em}
+.clean-about-copy p{font-size:17px;line-height:1.72;color:var(--muted);margin:0 0 16px}
+.clean-about-quote{font-family:Georgia,serif;font-style:italic;color:#4a2c1d!important;background:var(--cream);border-left:5px solid var(--gold);border-radius:20px;padding:18px!important}
+.clean-africa-card{position:relative;overflow:hidden;background:linear-gradient(135deg,#fffaf0,#f3dfb5);border-radius:38px;padding:40px;min-height:520px;display:flex;align-items:center;justify-content:center;box-shadow:0 22px 65px rgba(38,22,13,.14);border:1px solid rgba(38,22,13,.10)}
+.clean-africa-card:before{content:"Central African Roots";position:absolute;top:26px;left:28px;color:var(--green);font-weight:1000;text-transform:uppercase;letter-spacing:.18em;font-size:12px}
+.clean-africa-card:after{content:"Congo · Gabon · Kenya";position:absolute;bottom:26px;left:28px;color:var(--brown2);font-weight:1000;letter-spacing:.08em}
+.clean-africa-card img{width:min(100%,520px);height:auto;filter:drop-shadow(0 24px 30px rgba(38,22,13,.15))}
+.catering-text-only{margin-top:32px;background:var(--paper)}
+.catering-text-only .cards{margin-top:0}
+@media(max-width:900px){.clean-about-grid{grid-template-columns:1fr}.clean-africa-card{min-height:360px;padding:28px}}
+
+
+/* Final targeted contrast fixes */
+#page-home .home-inside-section{
+  background:linear-gradient(135deg,#f3dfb5 0%,#fff8e8 52%,#f6e6bd 100%)!important;
+  border-top:1px solid rgba(38,22,13,.10);
+  border-bottom:1px solid rgba(38,22,13,.10);
+}
+#page-home .home-inside-section .container{
+  position:relative;
+}
+#page-home .home-inside-section .title,
+#page-home .home-inside-section .sub{
+  color:var(--brown)!important;
+}
+#page-home .home-inside-section .home-inside-photo{
+  border-color:#fffdf8!important;
+  box-shadow:0 24px 65px rgba(38,22,13,.20)!important;
+}
+#page-home section:has(.section-head .kicker){
+  background:var(--paper);
+}
+#page-home section:has(.section-head .kicker):nth-of-type(3){
+  background:linear-gradient(180deg,#fffdf5 0%,#f3dfb5 100%)!important;
+}
+#page-home .cards .card{
+  background:#fff!important;
+  box-shadow:0 14px 38px rgba(38,22,13,.10)!important;
+}
+#page-menu .menu-box.dark{
+  background:linear-gradient(135deg,#24140b 0%,#3b2112 58%,#2f6b3f 100%)!important;
+  border:1px solid rgba(246,178,62,.35)!important;
+  box-shadow:0 20px 55px rgba(38,22,13,.18)!important;
+}
+#page-menu .menu-box.dark h3,
+#page-menu .menu-box.dark h4,
+#page-menu .menu-box.dark .menu-row span:first-child{
+  color:#fff8e8!important;
+}
+#page-menu .menu-box.dark .menu-row span:last-child{
+  background:var(--gold)!important;
+  color:var(--brown)!important;
+  padding:6px 10px;
+  border-radius:999px;
+  font-weight:1000;
+}
+#page-menu .menu-box.dark .menu-item{
+  border-bottom:1px solid rgba(255,255,255,.18)!important;
+}
+#page-menu .menu-box.dark .menu-item p{
+  color:rgba(255,248,232,.86)!important;
+}
+#page-menu .menu-box.dark .menu-photo,
+#page-menu .menu-box.dark img{
+  border:3px solid rgba(255,248,232,.18);
+}
+#page-menu .menu-box:has(h3:nth-child(1)){
+  border-color:rgba(38,22,13,.10)!important;
+}
+#page-menu .menu-box h3{
+  color:var(--brown)!important;
+}
+#page-menu .menu-box.dark h3{
+  color:var(--gold)!important;
+}
+
+
+#page-home .home-fresh-section{
+  background:linear-gradient(180deg,#fffdf5 0%,#f3dfb5 100%)!important;
+  border-top:1px solid rgba(38,22,13,.08);
+}
+#page-home .home-fresh-section .title,
+#page-home .home-fresh-section .sub{
+  color:var(--brown)!important;
+}
+
+
+/* Final small edit: green background for Home 3-card section */
+#page-home .home-fresh-section{
+  background:linear-gradient(135deg,#204d2d 0%,#2f6b3f 55%,#3f7d4a 100%)!important;
+  border-top:1px solid rgba(255,255,255,.12)!important;
+  border-bottom:1px solid rgba(255,255,255,.12)!important;
+}
+#page-home .home-fresh-section .kicker{
+  color:var(--gold)!important;
+}
+#page-home .home-fresh-section .title,
+#page-home .home-fresh-section .sub{
+  color:#fff8e8!important;
+}
+#page-home .home-fresh-section .card{
+  background:#fffdf8!important;
+  box-shadow:0 18px 45px rgba(0,0,0,.18)!important;
+}
+
+
+/* Final small edit: brown background for Google rating strip */
+#page-home .rating-strip{
+  background:linear-gradient(135deg,#24140b 0%,#3b2112 60%,#5b2b16 100%)!important;
+  border-top:1px solid rgba(255,255,255,.12)!important;
+  border-bottom:1px solid rgba(255,255,255,.12)!important;
+}
+#page-home .rating-strip .rating-card{
+  background:#fffdf8!important;
+  border-color:rgba(246,178,62,.22)!important;
+  box-shadow:0 18px 45px rgba(0,0,0,.18)!important;
+}
+#page-home .rating-strip .google-tag{
+  background:rgba(246,178,62,.22)!important;
+  color:#24140b!important;
+}
+
+
+/* Mobile optimization + Rex-style admin */
+.mobile-menu-btn{display:none}
+@media(max-width:900px){
+  body{overflow-x:hidden}
+  .container{padding:0 18px}
+  .top-strip{font-size:10px!important;letter-spacing:.08em!important;line-height:1.35}
+  .nav{grid-template-columns:1fr auto!important;min-height:72px!important;gap:12px!important}
+  .brand-main{font-size:24px!important}
+  .brand-sub{font-size:9px!important;letter-spacing:.14em!important}
+  .header-cta{display:none!important}
+  nav{display:flex!important;position:fixed;left:14px;right:14px;top:86px;z-index:999;background:#fffdf8!important;border-radius:24px!important;box-shadow:0 20px 60px rgba(0,0,0,.20);padding:14px!important;flex-direction:column;align-items:stretch;transform:translateY(-130%);opacity:0;pointer-events:none;transition:.25s ease}
+  body.mobile-nav-open nav{transform:translateY(0);opacity:1;pointer-events:auto}
+  nav a{display:block;text-align:center;padding:14px!important}
+  .mobile-menu-btn{display:inline-flex;justify-self:end;align-items:center;justify-content:center;border:1px solid rgba(38,22,13,.12);background:#fff;border-radius:999px;padding:11px 15px;font-weight:1000;color:var(--brown)}
+  .hero{min-height:auto!important}
+  .hero-grid{grid-template-columns:1fr!important;gap:26px!important;padding:54px 18px!important}
+  h1{font-size:clamp(48px,16vw,76px)!important}
+  .lead{font-size:20px!important}
+  .photo,.photo img{min-height:320px!important}
+  .mini-grid,.cards,.rating-grid,.home-review-grid,.home-inside-grid,.menu-grid,.entree-grid-clean,.sides-list-clean,.split,.visit-grid,.clean-about-grid{grid-template-columns:1fr!important}
+  section{padding:58px 0!important}
+  .title{font-size:clamp(36px,11vw,52px)!important}
+  .menu-box{padding:22px!important;border-radius:26px!important}
+  .entree-card-clean img,.menu-photo{height:220px!important}
+  .white-card,.hours,.dark-box,.clean-about-copy{padding:24px!important;border-radius:28px!important}
+  .clean-africa-card{min-height:300px!important}
+}
+@media(max-width:520px){
+  .actions{flex-direction:column}
+  .btn{width:100%;padding:14px 18px}
+  .card-body{padding:22px!important}
+  .num{font-size:46px!important}
+  .entree-card-clean img,.menu-photo{height:200px!important}
+  .photo-label{left:12px!important;right:12px!important;bottom:12px!important;padding:14px!important}
+}
+#page-admin{background:var(--cream)}
+.rex-admin-shell{display:grid;grid-template-columns:285px 1fr;gap:22px;align-items:start}
+.rex-admin-card{background:#fffdf8;border:1px solid rgba(38,22,13,.12);border-radius:30px;padding:24px;box-shadow:0 14px 38px rgba(38,22,13,.08)}
+.rex-admin-sidebar{position:sticky;top:112px}
+.rex-admin-user{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid rgba(38,22,13,.10)}
+.rex-admin-avatar{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--green),var(--gold));color:#fff;font-weight:1000}
+.rex-admin-tabs{display:grid;gap:9px}
+.rex-admin-tab{border:1px solid rgba(38,22,13,.12);background:#fff;border-radius:16px;padding:13px 14px;font-weight:1000;color:var(--brown);cursor:pointer;text-align:left}
+.rex-admin-tab.active,.rex-admin-tab:hover{background:var(--green);color:#fff}
+.rex-admin-panel h3{font-size:30px;margin:0 0 8px;letter-spacing:-.04em}
+.rex-admin-help{color:var(--muted);line-height:1.55;margin:0 0 18px}
+.rex-admin-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.rex-admin-grid.three{grid-template-columns:repeat(3,1fr)}
+.rex-field{display:grid;gap:7px;margin-bottom:14px}
+.rex-field label{font-weight:1000;color:var(--brown);font-size:14px}
+.rex-field input,.rex-field textarea,.rex-field select{width:100%;border:1px solid rgba(38,22,13,.18);border-radius:14px;padding:12px;background:#fff;font:inherit;color:var(--brown)}
+.rex-field textarea{min-height:110px;resize:vertical}
+.rex-note{background:#fff3c7;border:1px solid #f6d36f;color:#5b3a08;border-radius:18px;padding:14px;line-height:1.55;margin-bottom:16px}
+.rex-photo-slot{display:grid;grid-template-columns:170px 1fr;gap:16px;align-items:center;border:1px solid rgba(38,22,13,.10);background:var(--paper);border-radius:22px;padding:14px;margin-bottom:12px}
+.rex-photo-slot img{width:170px;height:118px;object-fit:cover;border-radius:16px;background:#eee;border:1px solid rgba(38,22,13,.10)}
+.rex-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.rex-mini-btn{border:0;border-radius:999px;padding:11px 16px;font-weight:1000;cursor:pointer;background:var(--green);color:#fff;text-decoration:none;display:inline-flex}
+.rex-mini-btn.secondary{background:#fff;border:1px solid rgba(38,22,13,.16);color:var(--brown)}
+.rex-mini-btn.gold{background:var(--gold);color:var(--brown)}
+.rex-menu-row,.rex-special-row{border:1px solid rgba(38,22,13,.10);background:var(--paper);border-radius:22px;padding:16px;margin-bottom:12px}
+.rex-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.rex-stat{background:var(--paper);border:1px solid rgba(38,22,13,.10);border-radius:22px;padding:18px}
+.rex-stat strong{display:block;font-size:34px;letter-spacing:-.05em;color:var(--green)}
+.rex-savebar{position:sticky;bottom:12px;margin-top:20px;background:rgba(255,248,232,.96);backdrop-filter:blur(12px);border:1px solid rgba(38,22,13,.12);border-radius:22px;padding:12px;display:flex;gap:10px;flex-wrap:wrap;z-index:10}
+.rex-login{max-width:560px}
+@media(max-width:900px){.rex-admin-shell{grid-template-columns:1fr}.rex-admin-sidebar{position:relative;top:auto}.rex-admin-tabs{grid-template-columns:repeat(2,1fr)}.rex-admin-grid,.rex-admin-grid.three,.rex-stat-grid{grid-template-columns:1fr}.rex-photo-slot{grid-template-columns:1fr}.rex-photo-slot img{width:100%;height:220px}}
+@media(max-width:520px){.rex-admin-tabs{grid-template-columns:1fr}}
+
+
+/* Mobile menu visibility fix */
+.mobile-menu-btn{
+  display:none;
+}
+@media(max-width:900px){
+  .nav{
+    display:grid!important;
+    grid-template-columns:1fr auto!important;
+    align-items:center!important;
+  }
+  .mobile-menu-btn{
+    display:inline-flex!important;
+    grid-column:2!important;
+    grid-row:1!important;
+    justify-self:end!important;
+    align-items:center!important;
+    justify-content:center!important;
+    gap:6px!important;
+    border:2px solid rgba(38,22,13,.18)!important;
+    background:#2f6b3f!important;
+    color:#fff!important;
+    border-radius:999px!important;
+    padding:12px 16px!important;
+    font-weight:1000!important;
+    font-size:14px!important;
+    cursor:pointer!important;
+    box-shadow:0 8px 24px rgba(47,107,63,.22)!important;
+    z-index:1001!important;
+  }
+  .header-cta{
+    display:none!important;
+  }
+  header nav{
+    display:flex!important;
+    position:fixed!important;
+    left:14px!important;
+    right:14px!important;
+    top:92px!important;
+    z-index:1000!important;
+    background:#fffdf8!important;
+    border:1px solid rgba(38,22,13,.14)!important;
+    border-radius:24px!important;
+    box-shadow:0 22px 70px rgba(0,0,0,.22)!important;
+    padding:14px!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    transform:translateY(-150%)!important;
+    opacity:0!important;
+    pointer-events:none!important;
+    transition:.25s ease!important;
+  }
+  body.mobile-nav-open header nav{
+    transform:translateY(0)!important;
+    opacity:1!important;
+    pointer-events:auto!important;
+  }
+  header nav a{
+    display:block!important;
+    width:100%!important;
+    text-align:center!important;
+    padding:15px!important;
+    border-radius:16px!important;
+    font-size:13px!important;
+  }
+}
+
+
+/* Admin image sync fix: mobile uses the same uploaded hero backgrounds */
+.hero[style*="--hero-img"]::before{
+  background:linear-gradient(90deg,rgba(38,22,13,.94),rgba(38,22,13,.72),rgba(38,22,13,.35)),var(--hero-img) center/cover!important;
+}
+@media(max-width:900px){
+  .hero[style*="--hero-img"]::before{
+    background:linear-gradient(180deg,rgba(38,22,13,.88),rgba(38,22,13,.68)),var(--hero-img) center/cover!important;
+  }
+}
+
+
+/* Final homepage overlay removal */
+#page-home .hero{
+  background:#fffaf0!important;
+  color:#24140b!important;
+}
+#page-home .hero:before{
+  display:none!important;
+  background:none!important;
+  opacity:0!important;
+}
+#page-home .hero h1,
+#page-home .hero h1 span,
+#page-home .hero .lead,
+#page-home .hero p{
+  color:#24140b!important;
+  text-shadow:none!important;
+}
+#page-home .hero h1 span{
+  color:#d65a1f!important;
+}
+#page-home .hero .pill{
+  background:#fffdf8!important;
+  border:1px solid rgba(38,22,13,.12)!important;
+  color:#2f6b3f!important;
+  box-shadow:0 10px 28px rgba(38,22,13,.07)!important;
+}
+#page-home .hero .mini-card{
+  background:#fffdf8!important;
+  border:1px solid rgba(38,22,13,.12)!important;
+  color:#24140b!important;
+  box-shadow:0 10px 28px rgba(38,22,13,.07)!important;
+}
+#page-home .hero .btn.outline{
+  border:1px solid rgba(38,22,13,.25)!important;
+  color:#24140b!important;
+  background:#fffdf8!important;
+}
+#page-home .hero .photo{
+  border:8px solid rgba(255,255,255,.9)!important;
+  box-shadow:0 24px 70px rgba(38,22,13,.20)!important;
+}
+
+
+/* Fix: keep homepage overlay removed while preserving admin photo controls */
+#page-home .hero{
+  background:var(--hero-img), #fffaf0!important;
+  background-position:center!important;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+  color:#24140b!important;
+}
+#page-home .hero:before{
+  display:none!important;
+  background:none!important;
+  opacity:0!important;
+}
+#page-home .hero h1,
+#page-home .hero .lead,
+#page-home .hero p{
+  color:#24140b!important;
+  text-shadow:none!important;
+}
+#page-home .hero h1 span{
+  color:#d65a1f!important;
+}
+
+
+/* Final homepage top swap:
+   - cream background for hero
+   - previous hero background image moved into right rectangle image
+*/
+#page-home .hero{
+  background:#fffaf0!important;
+  background-image:none!important;
+  color:#24140b!important;
+}
+#page-home .hero:before{
+  display:none!important;
+  background:none!important;
+  opacity:0!important;
+}
+
+
+/* Final Home color harmony pass */
+#page-home{
+  background:#fff8e8!important;
+}
+
+/* Hero: soft cream with subtle warmth */
+#page-home .hero{
+  background:
+    radial-gradient(circle at 80% 18%, rgba(246,178,62,.22), transparent 32%),
+    radial-gradient(circle at 12% 82%, rgba(47,107,63,.10), transparent 34%),
+    linear-gradient(135deg,#fff8e8 0%,#fffdf5 54%,#f3dfb5 100%)!important;
+  color:#24140b!important;
+}
+
+/* Rating strip: warm brown, but less harsh */
+#page-home .rating-strip{
+  background:linear-gradient(135deg,#2b190e 0%,#4a2917 58%,#6a351b 100%)!important;
+  border-top:1px solid rgba(246,178,62,.22)!important;
+  border-bottom:1px solid rgba(246,178,62,.22)!important;
+}
+#page-home .rating-strip .rating-card{
+  background:#fff8e8!important;
+  border-color:rgba(246,178,62,.28)!important;
+  box-shadow:0 16px 40px rgba(0,0,0,.15)!important;
+}
+#page-home .rating-strip .google-tag{
+  background:rgba(246,178,62,.24)!important;
+  color:#24140b!important;
+}
+
+/* Inside restaurant: transition back to cream instead of stark white */
+#page-home .home-inside-section{
+  background:linear-gradient(135deg,#fff8e8 0%,#f7e8c4 58%,#f3dfb5 100%)!important;
+  border-top:1px solid rgba(38,22,13,.08)!important;
+  border-bottom:1px solid rgba(38,22,13,.08)!important;
+}
+#page-home .home-inside-section .title,
+#page-home .home-inside-section .sub{
+  color:#24140b!important;
+}
+#page-home .home-inside-photo{
+  border-color:#fffdf5!important;
+  box-shadow:0 22px 58px rgba(38,22,13,.18)!important;
+}
+
+/* Fresh from kitchen: green but calmer, tied to brand */
+#page-home .home-fresh-section{
+  background:linear-gradient(135deg,#244f31 0%,#2f6b3f 58%,#416f3f 100%)!important;
+  border-top:1px solid rgba(255,248,232,.16)!important;
+  border-bottom:1px solid rgba(255,248,232,.16)!important;
+}
+#page-home .home-fresh-section .kicker{
+  color:#f6b23e!important;
+}
+#page-home .home-fresh-section .title,
+#page-home .home-fresh-section .sub{
+  color:#fff8e8!important;
+}
+#page-home .home-fresh-section .card{
+  background:#fffdf5!important;
+  border-color:rgba(246,178,62,.20)!important;
+  box-shadow:0 18px 44px rgba(0,0,0,.18)!important;
+}
+
+/* Google review section: same brown family as rating strip */
+#page-home .home-only-reviews,
+#page-home .reviews-section{
+  background:linear-gradient(135deg,#24140b 0%,#3b2112 60%,#5b2b16 100%)!important;
+  border-top:1px solid rgba(246,178,62,.20)!important;
+}
+#page-home .home-only-reviews .kicker,
+#page-home .reviews-section .kicker{
+  color:#f6b23e!important;
+}
+#page-home .home-review-card,
+#page-home .review-card{
+  background:rgba(255,248,232,.10)!important;
+  border-color:rgba(246,178,62,.22)!important;
+}
+
+/* Make the cards feel consistent across home */
+#page-home .card,
+#page-home .rating-card,
+#page-home .mini-card{
+  border-radius:28px!important;
+}
+
+/* Mobile: maintain the same palette, not abrupt blocks */
+@media(max-width:900px){
+  #page-home .hero{
+    background:
+      radial-gradient(circle at 80% 10%, rgba(246,178,62,.20), transparent 30%),
+      linear-gradient(180deg,#fff8e8 0%,#fffdf5 58%,#f3dfb5 100%)!important;
+  }
+  #page-home .rating-strip,
+  #page-home .home-only-reviews{
+    background:linear-gradient(180deg,#2b190e 0%,#4a2917 100%)!important;
+  }
+  #page-home .home-fresh-section{
+    background:linear-gradient(180deg,#244f31 0%,#2f6b3f 100%)!important;
+  }
+}
+
+</style>
+</head>
+<body>
+<header><div class="top-strip">Dine In · Carry Out · Catering · Central & East African Comfort Food</div><div class="container nav"><a href="#home" data-route="home"><div class="brand-main">The Taste <span>of Africa</span></div><div class="brand-sub">Syracuse, New York</div></a><nav><a href="#home" data-route="home">Home</a><a href="#menu" data-route="menu">Menu</a><a href="#catering" data-route="catering">Catering</a><a href="#about" data-route="about">About</a><a href="#contact" data-route="contact">Contact</a></nav><a class="btn green header-cta" href="tel:13153784152">Call to Order</a><button class="mobile-menu-btn" type="button" aria-label="Open navigation menu" onclick="document.body.classList.toggle('mobile-nav-open')">☰ Menu</button></div></header>
+<main>
+<div id="page-home" class="page active"><section class="hero" style="--hero-img:url('assets/combo_plate.jpg')"><div class="container hero-grid"><div><div class="pill">✦ Bringing you the finest dishes from Central and East Africa</div><h1>The Taste<span>of Africa</span></h1><p class="lead">Warm plates, rich stews, fresh sides, and weekend specials served with the comfort of home.</p><div class="actions"><a class="btn gold" href="#menu" data-route="menu">View Full Menu →</a><a class="btn outline" href="tel:13153784152">Call for Today’s Specials</a></div><div class="mini-grid"><div class="mini-card">🍽️ Dine In</div><div class="mini-card">🥡 Carry Out</div><div class="mini-card">🎉 Catering</div></div></div><div class="photo"><img src="assets/combo_plate.jpg"><div class="photo-label"><strong>Central & East African dishes</strong><span>4.2/5 Google Rating · 820 Danforth St · Syracuse</span></div></div></div></section>
+<section class="rating-strip">
+  <div class="container rating-grid">
+    <div class="rating-card">
+      <div class="google-tag">Google Reviews</div>
+      <strong>4.2 / 5</strong>
+      <span>Google review score from 136 reviews.</span>
+    </div>
+    <div class="rating-card">
+      <div class="google-tag">Customer Favorite</div>
+      <strong>Plantains</strong>
+      <span>Guests often call out the plantains, fufu, stews, and welcoming service.</span>
+    </div>
+    <div class="rating-card">
+      <div class="google-tag">Local Flavor</div>
+      <strong>Family-Owned</strong>
+      <span>Central and East African comfort food for dine-in, carry-out, and catering.</span>
+    </div>
+  </div>
+</section>
+
+<section class="home-inside-section">
+  <div class="container home-inside-grid">
+    <div>
+      <div class="kicker">Inside the Restaurant</div>
+      <h2 class="title">A warm place to sit, eat, and feel welcome.</h2>
+      <p class="sub">The dining room is casual, comfortable, and built for guests who want to enjoy their meal inside or stop in for carry-out.</p>
+      <div class="actions">
+        <a class="btn green" href="tel:13153784152">Call to Order</a>
+        <a class="btn light" href="#contact" data-route="contact">View Hours</a>
+      </div>
+    </div>
+    <div class="home-inside-photo">
+      <img src="assets/inside.jpg" alt="Inside The Taste of Africa restaurant dining room">
+    </div>
+  </div>
+</section>
+<section class="home-fresh-section"><div class="container"><div class="section-head"><div class="kicker">Fresh from the kitchen</div><h2 class="title">Plates that feel like home.</h2><p class="sub">Explore customer favorites, from fried fish and fufu to plantains, chapati, greens, beans, and rich stews.</p></div><div class="cards"><div class="card"><img class="menu-photo tall" src="assets/whole_fish.jpg" alt="Whole fried fish"><div class="card-body"><h3>Whole Fried Fish</h3><div class="tag">Samaki</div><p>Seasoned fish served with bright peppers, onions, and bold flavor.</p></div></div><div class="card"><img class="menu-photo tall" src="assets/egusi_fufu.jpg" alt="Egusi and fufu"><div class="card-body"><h3>Egusi & Fufu</h3><div class="tag">Customer favorite</div><p>A hearty, comforting plate with traditional fufu and rich egusi stew.</p></div></div><div class="card"><img class="menu-photo tall" src="assets/plantains_chapati_beans.jpg" alt="Plantains chapati and beans"><div class="card-body"><h3>Plantains, Chapati & Beans</h3><div class="tag">Sides</div><p>Classic sides that complete the meal and make every combo feel full.</p></div></div></div></div></section>
+<section class="home-only-reviews">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Google Review Highlights</div>
+      <h2 class="title">Guests praise the food, hospitality, and comfort.</h2>
+      <p class="sub">The Taste of Africa has a 4.2/5 Google review score from 136 reviews, with guests highlighting fresh food, plantains, fufu, and welcoming service.</p>
+    </div>
+    <div class="home-review-grid">
+      <div class="home-review-card"><div class="home-review-stars">★★★★★</div><p>“Great food, amazing hospitality.” Guests say the menu is focused and the dishes taste really good.</p><strong>Google Review</strong></div>
+      <div class="home-review-card"><div class="home-review-stars">★★★★★</div><p>“AMAZING!” One guest called the plantains the best they have had in Syracuse.</p><strong>Google Review</strong></div>
+      <div class="home-review-card"><div class="home-review-stars">★★★★☆</div><p>Guests mention good service, music, fufu, and wanting to bring friends to try African cuisine.</p><strong>Google Review</strong></div>
+    </div>
+  </div>
+</section>
+
+</div>
+<div id="page-menu" class="page"><section class="hero" style="min-height:54vh;--hero-img:url('assets/combo_plate.jpg')"><div class="container hero-grid"><div><div class="pill">✦ Lunch & Dinner</div><h1>Full<span>Menu</span></h1><p class="lead">Entrées, sides, combinations, and beverages from the printed menu.</p></div><div class="photo"><img src="assets/combo_plate.jpg"></div></div></section><section><div class="container menu-grid">
+
+<div class="menu-box" style="grid-column:1 / -1"><h3>Lunch & Dinner Entrées</h3>
+  <div class="entree-grid-clean">
+    <div class="entree-card-clean"><img src="assets/egusi_fufu.jpg" alt="Egusi served with fufu"><div class="body"><h4>Egusi</h4><span class="mini-tag">Entrée</span><p>Thick stew with chicken and African marinades.</p></div></div>
+    <div class="entree-card-clean"><img src="assets/beef_fufu.jpg" alt="Beef Stew"><div class="body"><h4>Beef Stew</h4><span class="mini-tag">Entrée</span><p>Beef marinated in Congolese spices and sautéed in a special African sauce.</p></div></div>
+    <div class="entree-card-clean"><img src="assets/chicken_stew_fufu.jpg" alt="Chicken Stew"><div class="body"><h4>Chicken Stew</h4><span class="mini-tag">Entrée</span><p>Chicken marinated and sautéed in an East African sauce.</p></div></div>
+    <div class="entree-card-clean"><img src="assets/goat_chapati_beans.jpg" alt="Mbuzi goat curry"><div class="body"><h4>Mbuzi</h4><span class="mini-tag">Entrée</span><p>Chopped goat curry seasoned with special African Congolese spices.</p></div></div>
+    <div class="entree-card-clean"><img src="assets/whole_fish.jpg" alt="Samaki fried tilapia"><div class="body"><h4>Samaki</h4><span class="mini-tag">Fish</span><p>Tilapia fried with a special African seasoning.</p></div></div>
+    <div class="entree-card-clean"><img src="assets/fish_plate.jpg" alt="Samaki na Mchuzi"><div class="body"><h4>Samaki na Mchuzi</h4><span class="mini-tag">Fish</span><p>Tilapia fried with special African seasoning and tomato sauce.</p></div></div>
+  </div>
+  <br><br>
+  <h3 style="margin-top:10px">Lunch & Dinner Sides</h3>
+  <div class="sides-list-clean">
+    <div class="side-pill-clean"><strong>Ndizi Tamu</strong><span>Fried plantains.</span></div>
+    <div class="side-pill-clean"><strong>Fufu</strong><span>Boiled pounded yam flour, pounded.</span></div>
+    <div class="side-pill-clean"><strong>White Rice</strong><span>White fried Basmati rice.</span></div>
+    <div class="side-pill-clean"><strong>Ugali</strong><span>Boiled corn flour, pounded.</span></div>
+    <div class="side-pill-clean"><strong>Fried Rice</strong><span>Basmati rice fried in an African marinade.</span></div>
+    <div class="side-pill-clean"><strong>Chapati</strong><span>Flat bread.</span></div>
+    <div class="side-pill-clean"><strong>Sukuma Wiki</strong><span>East African collard greens.</span></div>
+    <div class="side-pill-clean"><strong>Fried Beans</strong><span>Fried and seasoned red kidney beans.</span></div>
+  </div>
+</div>
+
+<div class="menu-box dark"><h3>Combinations</h3><div class="menu-item"><img class="menu-photo" src="assets/goat_chapati_beans.jpg" alt="Goat combo plate"><div class="menu-row"><span>Medium Combo Special</span><span>$24.84</span></div><p>Oxtails, goat, or egusi medium combo special.</p></div><div class="menu-item"><img class="menu-photo" src="assets/chicken_stew_fufu.jpg" alt="Chicken stew with fufu"><div class="menu-row"><span>Medium Combo Special</span><span>$16.20</span></div><p>Chicken or beef stew medium combo special.</p></div><div class="menu-item"><img class="menu-photo" src="assets/combo_plate.jpg" alt="Combination plate"><div class="menu-row"><span>Large Combo</span><span>Ask</span></div><p>One entrée and two sides.</p></div></div>
+<div class="menu-box dark"><h3>Specials & Medium Combos</h3><div class="menu-item"><div class="menu-row"><span>Oxtails / Goat / Egusi</span><span>$24.84</span></div><p>Medium combo special. Call ahead for current availability.</p></div><div class="menu-item"><div class="menu-row"><span>Chicken / Beef Stew</span><span>$16.20</span></div><p>Medium combo special. Call ahead for current availability.</p></div><div class="menu-item"><div class="menu-row"><span>Fish Fridays</span><span>Ask</span></div><p>Fresh fried fish specials available every Friday.</p></div></div><div class="menu-box"><h3>Beverages</h3><div class="menu-item"><div class="menu-row"><span>Bottled Water</span><span>$1.50</span></div><p>Cold bottled water.</p></div><div class="menu-item"><div class="menu-row"><span>Bottled Beverages</span><span>$3.00</span></div><p>Ask what flavors are available.</p></div><div class="menu-item"><div class="menu-row"><span>Canned Beverages</span><span>$1.00</span></div><p>Ask what drinks are available.</p></div></div>
+</div></section></div>
+
+<div id="page-specials" class="page"><section class="hero" style="min-height:54vh;--hero-img:url('assets/plantains_puffs.jpg')"><div class="container hero-grid"><div><div class="pill">✦ Saturday Specials · Fish Fridays</div><h1>Today’s<span>Specials</span></h1><p class="lead">Call ahead for current availability, fresh plates, and weekly specials.</p></div><div class="photo"><img src="assets/plantains_puffs.jpg"></div></div></section><section class="sand"><div class="container split"><div><div class="kicker">Weekly favorites</div><h2 class="title">Medium combo specials and Friday fish.</h2><p class="sub">Medium combo specials are available for select entrées, including oxtails, goat, egusi, chicken, and beef stew.</p></div><div class="dark-box"><h2>Specials</h2><div class="menu-item"><img class="menu-photo" src="assets/goat_chapati_beans.jpg" alt="Goat special"><div class="menu-row"><span>Oxtails / Goat / Egusi</span><span>$24.84</span></div><p>Medium combo special.</p></div><div class="menu-item"><img class="menu-photo" src="assets/chicken_stew_fufu_2.jpg" alt="Chicken stew special"><div class="menu-row"><span>Chicken / Beef Stew</span><span>$16.20</span></div><p>Medium combo special.</p></div><div class="menu-item"><img class="menu-photo" src="assets/whole_fish.jpg" alt="Fish Friday special"><div class="menu-row"><span>Fish Fridays</span><span>Ask</span></div><p>Fresh fried fish specials available every Friday.</p></div></div></div></section></div>
+
+<div id="page-catering" class="page">
+<section class="hero" style="min-height:54vh;--hero-img:url('assets/catering_booth.jpg')">
+  <div class="container hero-grid">
+    <div>
+      <div class="pill">✦ Dine In · Carry Out · Catering</div>
+      <h1>Catering<span>& Events</span></h1>
+      <p class="lead">Bring The Taste of Africa to festivals, corporate events, family gatherings, community celebrations, and private parties.</p>
+      <div class="actions">
+        <a class="btn gold" href="tel:13153784152">Call for Catering</a>
+        <a class="btn outline" href="#contact" data-route="contact">Contact Us</a>
+      </div>
+    </div>
+    <div class="photo"><img src="assets/event_team.jpg" alt="The Taste of Africa catering team at Pan African Cuisine event"></div>
+  </div>
+</section>
+
+<section class="catering-text-only">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Catering Services</div>
+      <h2 class="title">Set up, serve, and share the flavor.</h2>
+      <p class="sub">Bring The Taste of Africa to festivals, corporate events, private parties, family gatherings, and community celebrations. Catering is built around generous portions, comforting dishes, and a welcoming presentation.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="stripe"></div><div class="card-body"><div class="num">01</div><h3>Events & Festivals</h3><div class="tag">Large gatherings</div><p>Professional setup for community events, cultural festivals, pop-ups, and public celebrations.</p></div></div>
+      <div class="card"><div class="stripe"></div><div class="card-body"><div class="num">02</div><h3>Private Catering</h3><div class="tag">Family & groups</div><p>Ask about larger portions of entrées, rice, plantains, chapati, greens, beans, and combo-style service.</p></div></div>
+      <div class="card"><div class="stripe"></div><div class="card-body"><div class="num">03</div><h3>Call Ahead</h3><div class="tag">Planning</div><p>Call to discuss the menu, timing, quantities, setup needs, and current catering availability.</p></div></div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div id="page-about" class="page">
+<section class="hero" style="min-height:54vh;--hero-img:url('assets/family.jpg')">
+  <div class="container hero-grid">
+    <div>
+      <div class="pill">✦ Our Story</div>
+      <h1>Part of<span>the Family</span></h1>
+      <p class="lead">A family-owned Syracuse restaurant sharing Central African cuisine, hospitality, and community.</p>
+    </div>
+    <div class="photo"><img src="assets/family.jpg" alt="The Taste of Africa family"></div>
+  </div>
+</section>
+<section class="clean-about-wrap">
+  <div class="container clean-about-grid">
+    <div class="clean-about-copy">
+      <div class="kicker">Our Story</div>
+      <h2>We would like you to be part of the family.</h2>
+      <p>The Taste of Africa is a family-owned business whose goal is to provide a warm family ambience and serve a variety of healthy, tasty Central African cuisine.</p>
+      <p>The menu features specialties from Congo, Gabon, and Kenya, with dine-in, carry-out, banquet, and catering services available for the community.</p>
+      <p class="clean-about-quote">“My family originated from the Republic of Congo. In the early 1990s a civil war broke out and my family was forced to run and leave everything behind.”</p>
+      <p>After arriving in Upstate New York in August of 2005, it became a dream to open a restaurant and share a love of African cuisine with the local community. After years of planning and perseverance, that dream became The Taste of Africa in October of 2017.</p>
+      <p>We are here to serve you and accommodate your needs. We welcome you to enjoy the delicious tastes of Africa.</p>
+    </div>
+    <div class="clean-africa-card">
+      <img src="assets/africa_map.png" alt="Africa globe map">
+    </div>
+  </div>
+</section>
+</div>
+
+<div id="page-contact"
+ class="page"><section class="sand"><div class="container visit-grid"><div class="white-card"><div class="kicker">Visit us</div><h2 class="title">Order, dine in, carry out, or ask about catering.</h2><div style="line-height:2;font-size:18px;font-weight:800">☎ (315) 378-4152<br>📍 820 Danforth St, Syracuse, NY 13208<br>⏰ Tue–Fri 4:30 PM–8:30 PM · Sat 12:00 PM–8:00 PM</div><br><div class="actions"><a class="btn green" href="tel:13153784152">Call to Order</a><a class="btn light" target="_blank" href="https://www.google.com/maps/search/?api=1&query=820+Danforth+St+Syracuse+NY+13208">Get Directions</a></div></div><div class="hours"><h3>Hours</h3><div class="hour-row"><strong>Sunday</strong><span>Closed</span></div><div class="hour-row"><strong>Monday</strong><span>Closed</span></div><div class="hour-row"><strong>Tuesday</strong><span>4:30 PM – 8:30 PM</span></div><div class="hour-row"><strong>Wednesday</strong><span>4:30 PM – 8:30 PM</span></div><div class="hour-row"><strong>Thursday</strong><span>4:30 PM – 8:30 PM</span></div><div class="hour-row"><strong>Friday</strong><span>4:30 PM – 8:30 PM</span></div><div class="hour-row"><strong>Saturday</strong><span>12:00 PM – 8:00 PM</span></div></div></div></section></div>
+
+
+<div id="page-admin" class="page">
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Admin</div>
+      <h2 class="title">Taste of Africa Admin</h2>
+      <p class="sub">Manage photos, specials, content, menu items, business info, password, and analytics from one clean control panel.</p>
+    </div>
+    <div id="toaAdminLogin" class="rex-admin-card rex-login">
+      <div class="rex-note">Enter the admin password to manage the website.</div>
+      <div class="rex-field"><label>Password</label><input id="toaAdminPasswordInput" type="password" placeholder="Enter password"></div>
+      <button class="rex-mini-btn" onclick="toaAdminLogin()">Sign In</button>
+      <p id="toaAdminError" style="display:none;color:#b42318;font-weight:1000">Incorrect password. Try again.</p>
+    </div>
+    <div id="toaAdminDashboard" style="display:none">
+      <div class="rex-admin-shell">
+        <aside class="rex-admin-card rex-admin-sidebar">
+          <div class="rex-admin-user"><div class="rex-admin-avatar">TOA</div><div><strong>The Taste of Africa</strong><br><span style="color:var(--muted);font-size:13px">Website Manager</span></div></div>
+          <div class="rex-admin-tabs">
+            <button class="rex-admin-tab active" onclick="toaShowAdmin('photos', this)">Photos</button>
+            <button class="rex-admin-tab" onclick="toaShowAdmin('specials', this)">Specials</button>
+            <button class="rex-admin-tab" onclick="toaShowAdmin('content', this)">Content</button>
+            <button class="rex-admin-tab" onclick="toaShowAdmin('menu', this)">Menu</button>
+            <button class="rex-admin-tab" onclick="toaShowAdmin('business', this)">Business</button>
+            <button class="rex-admin-tab" onclick="toaShowAdmin('password', this)">Password</button>
+            <button class="rex-admin-tab" onclick="toaShowAdmin('analytics', this)">Analytics</button>
+          </div>
+          <div class="rex-actions"><button class="rex-mini-btn gold" onclick="toaRefreshLiveContent()">Refresh Live Content</button><button class="rex-mini-btn secondary" onclick="toaAdminSignOut()">Sign Out</button></div>
+        </aside>
+        <main class="rex-admin-card rex-admin-panel" id="toaAdminPanel"></main>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+</main><footer><div class="container"><span>© The Taste of Africa Restaurant · Syracuse, NY</span><span>Dine In · Carry Out · Catering · Central & East African Comfort Food · <a style="color:var(--gold);font-weight:1000" href="#admin" data-route="admin">Admin</a></span></div></footer>
+<script>
+function showPage(route) {
+  route = route || location.hash.replace('#','') || 'home';
+  if (route === 'specials') route = 'menu';
+  if (!document.getElementById('page-' + route)) route = 'home';
+  document.querySelectorAll('.page').forEach(function(p){ p.classList.remove('active'); });
+  document.getElementById('page-' + route).classList.add('active');
+  document.querySelectorAll('[data-route]').forEach(function(a){ a.classList.toggle('active', a.dataset.route === route); });
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+document.querySelectorAll('[data-route]').forEach(function(a){
+  a.addEventListener('click', function(e){
+    e.preventDefault();
+    var r = a.dataset.route;
+    history.pushState(null, '', '#' + r);
+    showPage(r);
+  });
+});
+window.addEventListener('popstate', function(){ showPage(); });
+showPage();
+
+document.querySelectorAll('header nav a').forEach(function(link){
+  link.addEventListener('click', function(){
+    document.body.classList.remove('mobile-nav-open');
+  });
+});
+
+
+const ADMIN_PASSWORD = "4200";
+const ADMIN_STORAGE_KEY = "toa_admin_edits_v1";
+const ANALYTICS_KEY = "toa_local_views_v1";
+localStorage.setItem(ANALYTICS_KEY, String(Number(localStorage.getItem(ANALYTICS_KEY) || 0) + 1));
+function adminLogin(){
+  const input = document.getElementById("adminPassword");
+  if(input && input.value === ADMIN_PASSWORD){
+    document.getElementById("adminLogin").style.display="none";
+    document.getElementById("adminDashboard").style.display="block";
+    showAdminPanel("text");
+  } else alert("Wrong password.");
+}
+function showAdminPanel(type){
+  const panel=document.getElementById("adminPanel"); if(!panel) return;
+  if(type==="text") panel.innerHTML='<h2>Edit Main Text</h2><div class="field"><label>Homepage Intro</label><textarea id="editIntro">Warm plates, rich stews, fresh sides, and weekend specials served with the comfort of home.</textarea></div><div class="field"><label>About Headline</label><input id="editAbout" value="We would like you to be part of the family."></div><div class="field"><label>Footer Text</label><input id="editFooter" value="Dine In · Carry Out · Catering · Central & East African Comfort Food"></div><button class="btn green" onclick="saveAdminDraft(\'text\')">Save Text Draft</button>';
+  if(type==="menu") panel.innerHTML='<h2>Edit Menu & Pricing</h2><p class="sub">Update menu/pricing drafts, then export the website.</p><div class="field"><label>Specials</label><textarea id="editMenu">Oxtails / Goat / Egusi — $24.84\nChicken / Beef Stew — $16.20\nFish Fridays — Ask</textarea></div><div class="field"><label>Entrées</label><textarea id="editEntrees">Egusi\nBeef Stew\nChicken Stew\nMbuzi\nSamaki\nSamaki na Mchuzi</textarea></div><button class="btn green" onclick="saveAdminDraft(\'menu\')">Save Menu Draft</button>';
+  if(type==="images") panel.innerHTML='<h2>Edit Images</h2><p class="sub">Paste hosted image URLs or notes for which image to replace.</p><div class="field"><label>Homepage hero image URL</label><input id="editHeroImg" placeholder="Paste image URL"></div><div class="field"><label>Menu image URL</label><input id="editMenuImg" placeholder="Paste image URL"></div><div class="field"><label>About image URL</label><input id="editAboutImg" placeholder="Paste image URL"></div><button class="btn green" onclick="saveAdminDraft(\'images\')">Save Image Draft</button>';
+  if(type==="hours") panel.innerHTML='<h2>Edit Hours</h2><div class="field"><label>Hours</label><textarea id="editHours">Sunday: Closed\nMonday: Closed\nTuesday: 4:30 PM – 8:30 PM\nWednesday: 4:30 PM – 8:30 PM\nThursday: 4:30 PM – 8:30 PM\nFriday: 4:30 PM – 8:30 PM\nSaturday: 12:00 PM – 8:00 PM</textarea></div><button class="btn green" onclick="saveAdminDraft(\'hours\')">Save Hours Draft</button>';
+  if(type==="analytics"){const views=localStorage.getItem(ANALYTICS_KEY)||"0";panel.innerHTML='<h2>Analytics</h2><div class="analytics-grid"><div class="stat"><strong>'+views+'</strong><span>Local page views</span></div><div class="stat"><strong>Ready</strong><span>Phone click tracking</span></div><div class="stat"><strong>Ready</strong><span>Menu tracking</span></div><div class="stat"><strong>Ready</strong><span>GA4 / Meta Pixel</span></div></div><br><div class="notice">For real client analytics, add Google Analytics 4, Meta Pixel, Netlify Analytics, or Plausible.</div>';}
+}
+function saveAdminDraft(type){let data=JSON.parse(localStorage.getItem(ADMIN_STORAGE_KEY)||"{}");data[type]=Array.from(document.querySelectorAll("#adminPanel input,#adminPanel textarea")).map(el=>({id:el.id,value:el.value}));localStorage.setItem(ADMIN_STORAGE_KEY,JSON.stringify(data));alert("Saved as a local admin draft. Export the website when ready.");}
+function resetAdminChanges(){localStorage.removeItem(ADMIN_STORAGE_KEY);alert("Local admin drafts cleared.");}
+function downloadCurrentHTML(){const html='<!DOCTYPE html>\n'+document.documentElement.outerHTML;const blob=new Blob([html],{type:'text/html'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='taste-of-africa-website-updated.html';a.click();}
+
+</script><script>
+/* TOA live CMS admin + dynamic public content
+   Live content is stored through /.netlify/functions/content.
+   Only code/design changes require a Netlify redeploy after this is installed. */
+const TOA_API_PATH = "/.netlify/functions/content";
+const TOA_VIEWS_KEY = "toa_site_views_v1";
+let TOA_LIVE_CONTENT = {};
+let TOA_ADMIN_PASSWORD_SESSION = "";
+localStorage.setItem(TOA_VIEWS_KEY, String(Number(localStorage.getItem(TOA_VIEWS_KEY) || 0) + 1));
+function toaPassword(){ return "4200"; }
+function toaData(){ return TOA_LIVE_CONTENT || {}; }
+function toaSaveData(data){ TOA_LIVE_CONTENT = data || {}; toaApplyLiveContent(TOA_LIVE_CONTENT); }
+const toaPhotoSlots = {
+  homeBackground:{group:"Home Page",label:"Home background image",targets:[{selector:"#page-home .hero",type:"background"}]},
+  homeMainPicture:{group:"Home Page",label:"Home rectangle picture",targets:[{selector:"#page-home .photo img",type:"src"}]},
+  homeInside:{group:"Home Page",label:"Inside Restaurant",targets:[{selector:"#page-home .home-inside-photo img",type:"src"}]},
+  menuMain:{group:"Menu Page",label:"Menu main image / hero",targets:[{selector:"#page-menu .hero",type:"background"},{selector:"#page-menu .photo img",type:"src"}]},
+  egusiPhoto:{group:"Menu Page",label:"Egusi Photo",targets:[{selector:"#page-menu .entree-card-clean img",type:"src"}]},
+  cateringMain:{group:"Catering Page",label:"Catering main image / hero",targets:[{selector:"#page-catering .hero",type:"background"},{selector:"#page-catering .photo img",type:"src"}]},
+  aboutMain:{group:"About Page",label:"About main image / hero",targets:[{selector:"#page-about .hero",type:"background"},{selector:"#page-about .photo img",type:"src"}]},
+  aboutAfrica:{group:"About Page",label:"Africa Globe",targets:[{selector:"#page-about .clean-africa-card img",type:"src"}]}
+};
+const toaContentTargets = [
+  ["Home Hero Heading","#page-home h1"],
+  ["Home Hero Subheading","#page-home .lead"],
+  ["Menu Hero Heading","#page-menu h1"],
+  ["Catering Hero Heading","#page-catering h1"],
+  ["About Heading","#page-about .clean-about-copy h2"],
+  ["About Paragraph 1","#page-about .clean-about-copy p:nth-of-type(1)"],
+  ["About Paragraph 2","#page-about .clean-about-copy p:nth-of-type(2)"],
+  ["Contact Heading","#page-contact .title"]
+];
+async function toaFetchLiveContent(){
+  try{
+    const res = await fetch(TOA_API_PATH, {cache:"no-store"});
+    if(!res.ok) throw new Error("CMS endpoint not ready");
+    const payload = await res.json();
+    TOA_LIVE_CONTENT = payload.content || {};
+    toaApplyLiveContent(TOA_LIVE_CONTENT);
+    return TOA_LIVE_CONTENT;
+  }catch(err){
+    console.warn("Live CMS content was not loaded. Check Netlify function/env setup.", err);
+    return {};
+  }
+}
+async function toaPostLiveContent(content){
+  const password = TOA_ADMIN_PASSWORD_SESSION || document.getElementById("toaAdminPasswordInput")?.value || prompt("Enter admin password to save live changes:");
+  const res = await fetch(TOA_API_PATH, {
+    method:"POST",
+    headers:{"Content-Type":"application/json","x-admin-password":password || ""},
+    body:JSON.stringify({content})
+  });
+  const payload = await res.json().catch(()=>({}));
+  if(!res.ok) throw new Error(payload.error || "Could not save live content.");
+  TOA_LIVE_CONTENT = payload.content || content;
+  toaApplyLiveContent(TOA_LIVE_CONTENT);
+  return TOA_LIVE_CONTENT;
+}
+async function toaUploadLiveImage(key,file){
+  throw new Error("File uploads are disabled for this CMS. Upload the image to Cloudinary and paste the image URL instead.");
+}
+function toaFileToBase64(file){return new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(String(r.result).split(",")[1] || "");r.onerror=reject;r.readAsDataURL(file);});}
+function toaAdminLogin(){
+  const input=document.getElementById("toaAdminPasswordInput");
+  const err=document.getElementById("toaAdminError");
+  if(input && input.value){
+    TOA_ADMIN_PASSWORD_SESSION = input.value;
+    document.getElementById("toaAdminLogin").style.display="none";
+    document.getElementById("toaAdminDashboard").style.display="block";
+    toaShowAdmin("photos");
+    toaFetchLiveContent();
+  }else if(err){err.style.display="block";err.innerText="Enter the admin password.";}
+}
+function toaAdminSignOut(){TOA_ADMIN_PASSWORD_SESSION="";document.getElementById("toaAdminDashboard").style.display="none";document.getElementById("toaAdminLogin").style.display="block";}
+function toaShowAdmin(tab,btn){document.querySelectorAll(".rex-admin-tab").forEach(b=>b.classList.remove("active"));if(btn)btn.classList.add("active");const panel=document.getElementById("toaAdminPanel");if(!panel)return;if(tab==="photos")toaRenderPhotos(panel);if(tab==="specials")toaRenderSpecials(panel);if(tab==="content")toaRenderContent(panel);if(tab==="menu")toaRenderMenu(panel);if(tab==="business")toaRenderBusiness(panel);if(tab==="password")toaRenderPassword(panel);if(tab==="analytics")toaRenderAnalytics(panel);}
+function toaRenderPhotos(panel){const data=toaData();const imgs=data.images||{};const groups={};Object.entries(toaPhotoSlots).forEach(([key,slot])=>{groups[slot.group]=groups[slot.group]||[];groups[slot.group].push([key,slot]);});panel.innerHTML=`<h3>Live Site Photos</h3><p class="rex-admin-help">Upload a photo or paste a hosted image URL. Changes save to the live CMS/database and the public site fetches them on page load.</p><div class="rex-note"><strong>No redeploy needed:</strong> click Save Live Photos after edits. Code/design changes still require a deploy.</div>${Object.entries(groups).map(([group,slots])=>`<h4>${group}</h4>`+slots.map(([key,slot])=>{const current=imgs[key]||toaCurrentPhoto(slot);return `<div class="rex-photo-slot"><img id="toaPreview_${key}" src="${current||""}" alt=""><div><strong>${slot.label}</strong><div class="rex-note" style="margin-top:10px"><strong>Use image URLs only.</strong> File uploads are disabled to prevent Firestore size errors. Upload the photo to Cloudinary, then paste the hosted image URL below.</div><div class="rex-field"><label>Paste image URL</label><input id="toaImageUrl_${key}" value="${toaEsc(current)}" placeholder="https://..."></div><div class="rex-actions"><button class="rex-mini-btn secondary" onclick="toaClearImage('${key}')">Clear</button></div></div></div>`;}).join("")).join("")}<div class="rex-savebar"><button class="rex-mini-btn" onclick="toaApplyImages()">Save Live Photos</button></div>`;}
+function toaRenderSpecials(panel){const specials=toaData().specials || toaReadSpecialsFromDom();panel.innerHTML=`<h3>Live Weekly Specials</h3><p class="rex-admin-help">Edit specials, prices, and descriptions. These save live to the database.</p><div id="toaSpecialsEditor">${specials.map((item,i)=>`<div class="rex-special-row" data-special-row="${i}"><div class="rex-admin-grid three"><div class="rex-field"><label>Name</label><input value="${toaEsc(item.name)}" data-special-name="${i}"></div><div class="rex-field"><label>Price / Label</label><input value="${toaEsc(item.price)}" data-special-price="${i}"></div><div class="rex-field"><label>Description</label><textarea data-special-desc="${i}">${toaEsc(item.desc)}</textarea></div></div></div>`).join("")}</div><div class="rex-actions"><button class="rex-mini-btn secondary" onclick="toaAddSpecial()">Add Special</button></div><div class="rex-savebar"><button class="rex-mini-btn" onclick="toaApplySpecials()">Save Live Specials</button></div>`;}
+function toaRenderContent(panel){const data=toaData();const content=data.content||{};panel.innerHTML=`<h3>Live Site Content</h3><p class="rex-admin-help">Edit the main words. The public site will fetch these on page load.</p>${toaContentTargets.map(([label,selector])=>{const val=content[selector] ?? document.querySelector(selector)?.innerText ?? "";return `<div class="rex-field"><label>${label}</label><textarea data-content-selector="${selector}">${toaEsc(val)}</textarea></div>`;}).join("")}<div class="rex-savebar"><button class="rex-mini-btn" onclick="toaApplyContent()">Save Live Content</button></div>`;}
+function toaRenderMenu(panel){toaTagMenuItems();const menu=toaData().menu || toaReadMenuFromDom();panel.innerHTML=`<h3>Live Menu Editor</h3><p class="rex-admin-help">Edit menu item names, tags/prices, and descriptions. Prices update live without redeploying.</p><div id="toaMenuEditor">${menu.map((item,i)=>`<div class="rex-menu-row"><div class="rex-admin-grid three"><div class="rex-field"><label>Name</label><input data-menu-name="${i}" value="${toaEsc(item.name)}"></div><div class="rex-field"><label>Tag / Price</label><input data-menu-tag="${i}" value="${toaEsc(item.tag)}"></div><div class="rex-field"><label>Description</label><textarea data-menu-desc="${i}">${toaEsc(item.desc)}</textarea></div></div></div>`).join("")}</div><div class="rex-savebar"><button class="rex-mini-btn" onclick="toaApplyMenu()">Save Live Menu</button></div>`;}
+function toaRenderBusiness(panel){const data=toaData();const business=data.business||{};const top=business.topStrip ?? document.querySelector(".top-strip")?.innerText ?? "";const footer=business.footerText ?? document.querySelector("footer .container span:last-child")?.innerText ?? "";const contact=business.contactBlock ?? document.querySelector("#page-contact .white-card div[style*='line-height']")?.innerText ?? "";const hours=business.hoursText ?? toaReadHoursFromDom();const announcement=business.announcement ?? "";panel.innerHTML=`<h3>Live Business Info</h3><p class="rex-admin-help">Edit contact info, hours, footer, top banner, and announcements.</p><div class="rex-field"><label>Announcement / Special Notice</label><textarea id="toaAnnouncement" placeholder="Example: Closed July 4th, New lunch special this week, etc.">${toaEsc(announcement)}</textarea></div><div class="rex-field"><label>Top Strip</label><input id="toaTopStrip" value="${toaEsc(top)}"></div><div class="rex-field"><label>Phone / Address / Contact Block</label><textarea id="toaBusinessBlock">${toaEsc(contact)}</textarea></div><div class="rex-field"><label>Hours</label><textarea id="toaHoursBlock">${toaEsc(hours)}</textarea></div><div class="rex-field"><label>Footer Text</label><input id="toaFooterText" value="${toaEsc(footer)}"></div><div class="rex-savebar"><button class="rex-mini-btn" onclick="toaApplyBusiness()">Save Live Business Info</button></div>`;}
+function toaRenderPassword(panel){panel.innerHTML=`<h3>Admin Password</h3><p class="rex-admin-help">For a secure live site, change the admin password in Netlify environment variables.</p><div class="rex-note">Set <strong>ADMIN_PASSWORD</strong> in Netlify. Password changes do not require a site redeploy, but the function may need a quick refresh from Netlify.</div>`;}
+function toaRenderAnalytics(panel){const views=localStorage.getItem(TOA_VIEWS_KEY)||"0";localStorage.setItem("toa_last_visit",new Date().toLocaleString());panel.innerHTML=`<h3>Site Analytics</h3><p class="rex-admin-help">Local preview analytics plus links for real business dashboards.</p><div class="rex-stat-grid"><div class="rex-stat"><strong>${views}</strong><span>This Browser Visits</span></div><div class="rex-stat"><strong>Live</strong><span>CMS Status</span></div><div class="rex-stat"><strong>—</strong><span>Today</span></div><div class="rex-stat"><strong>${localStorage.getItem("toa_last_visit")}</strong><span>Last Visit</span></div></div><br><div class="rex-note">For real visitor analytics across every device, connect GA4, Meta Pixel, or Plausible.</div>`;}
+async function toaUploadImage(key,file){
+  alert("File uploads are disabled to prevent Firestore size errors. Please paste a Cloudinary image URL instead.");
+}
+function toaCurrentPhoto(slot){const targets=slot.targets||[slot];for(const target of targets){const el=document.querySelector(target.selector);if(!el)continue;if(target.type==="src"){const val=el.getAttribute("src")||"";if(val)return val;}const style=el.getAttribute("style")||"";const m=style.match(/--hero-img:url\('([^']+)'\)|--hero-img:url\("([^"]+)"\)|--hero-img:url\(([^)]+)\)/);if(m){return (m[1]||m[2]||m[3]||"").replace(/^['"]|['"]$/g,"");}}return "";}
+function toaApplyOneImage(key,src){const slot=toaPhotoSlots[key];if(!slot || !src)return;const targets=slot.targets||[slot];targets.forEach(target=>{const el=document.querySelector(target.selector);if(!el)return;if(target.type==="background"){el.style.setProperty("--hero-img",`url('${src}')`);}else{el.setAttribute("src",src);}});}
+async function toaApplyImages(){try{const data=toaData();data.images=data.images||{};Object.keys(toaPhotoSlots).forEach(key=>{const input=document.getElementById("toaImageUrl_"+key);if(input && input.value.trim())data.images[key]=input.value.trim();});Object.keys(data.images).forEach(k=>toaApplyOneImage(k,data.images[k]));await toaPostLiveContent(data);alert("Live photos saved. Refresh the public site to confirm.");}catch(err){alert(err.message);}}
+function toaClearImage(key){const data=toaData();data.images=data.images||{};delete data.images[key];toaSaveData(data);const input=document.getElementById("toaImageUrl_"+key);if(input)input.value="";}
+function toaAddSpecial(){const editor=document.getElementById("toaSpecialsEditor");const i=editor.querySelectorAll(".rex-special-row").length;if(i>=12)return alert("Maximum 12 specials.");editor.insertAdjacentHTML("beforeend",`<div class="rex-special-row" data-special-row="${i}"><div class="rex-admin-grid three"><div class="rex-field"><label>Name</label><input data-special-name="${i}" value="New Special"></div><div class="rex-field"><label>Price / Label</label><input data-special-price="${i}" value="Ask"></div><div class="rex-field"><label>Description</label><textarea data-special-desc="${i}">Add details here.</textarea></div></div></div>`);}
+async function toaApplySpecials(){try{const rows=document.querySelectorAll("#toaSpecialsEditor .rex-special-row");const specials=[];rows.forEach((row,i)=>{specials.push({name:document.querySelector(`[data-special-name="${i}"]`)?.value||"",price:document.querySelector(`[data-special-price="${i}"]`)?.value||"",desc:document.querySelector(`[data-special-desc="${i}"]`)?.value||""});});const data=toaData();data.specials=specials;toaSaveData(data);await toaPostLiveContent(data);alert("Live specials saved.");}catch(err){alert(err.message);}}
+async function toaApplyContent(){try{const data=toaData();data.content=data.content||{};document.querySelectorAll("[data-content-selector]").forEach(input=>{data.content[input.dataset.contentSelector]=input.value;});toaSaveData(data);await toaPostLiveContent(data);alert("Live content saved.");}catch(err){alert(err.message);}}
+async function toaApplyMenu(){try{const menu=[];document.querySelectorAll("[data-menu-name]").forEach(input=>{const i=input.dataset.menuName;menu.push({name:document.querySelector(`[data-menu-name="${i}"]`)?.value||"",tag:document.querySelector(`[data-menu-tag="${i}"]`)?.value||"",desc:document.querySelector(`[data-menu-desc="${i}"]`)?.value||""});});const data=toaData();data.menu=menu;toaSaveData(data);await toaPostLiveContent(data);alert("Live menu saved.");}catch(err){alert(err.message);}}
+async function toaApplyBusiness(){try{const data=toaData();data.business={announcement:document.getElementById("toaAnnouncement")?.value||"",topStrip:document.getElementById("toaTopStrip")?.value||"",contactBlock:document.getElementById("toaBusinessBlock")?.value||"",hoursText:document.getElementById("toaHoursBlock")?.value||"",footerText:document.getElementById("toaFooterText")?.value||""};toaSaveData(data);await toaPostLiveContent(data);alert("Live business info saved.");}catch(err){alert(err.message);}}
+async function toaRefreshLiveContent(){await toaFetchLiveContent();alert("Live content refreshed from the database.");}
+function toaApplyLiveContent(data){if(!data)return; if(data.images)Object.keys(data.images).forEach(k=>toaApplyOneImage(k,data.images[k])); if(data.content)Object.entries(data.content).forEach(([selector,value])=>{const el=document.querySelector(selector);if(el)el.innerText=value;}); if(data.specials)toaRenderSpecialsToDom(data.specials); if(data.menu)toaRenderMenuToDom(data.menu); if(data.business)toaRenderBusinessToDom(data.business);}
+function toaRenderSpecialsToDom(specials){const box=document.querySelector("#page-menu .menu-box.dark");if(!box)return;box.querySelectorAll(".menu-item").forEach(i=>i.remove());specials.forEach(item=>box.insertAdjacentHTML("beforeend",`<div class="menu-item"><div class="menu-row"><span>${toaEsc(item.name)}</span><span>${toaEsc(item.price)}</span></div><p>${toaEsc(item.desc)}</p></div>`));}
+function toaRenderMenuToDom(menu){toaTagMenuItems();menu.forEach((item,i)=>{const el=document.querySelector(`[data-toa-menu-item="${i}"]`);if(!el)return;const nameEl=el.querySelector("h4,strong,.menu-row span:first-child");const tagEl=el.querySelector(".mini-tag,.menu-row span:last-child");const descEl=el.querySelector("p,span:not(.mini-tag)");if(nameEl)nameEl.innerText=item.name||"";if(tagEl)tagEl.innerText=item.tag||"";if(descEl)descEl.innerText=item.desc||"";});}
+function toaRenderBusinessToDom(business){if(business.announcement)toaShowAnnouncement(business.announcement);const top=document.querySelector(".top-strip");if(top && business.topStrip)top.innerText=business.topStrip;const contact=document.querySelector("#page-contact .white-card div[style*='line-height']");if(contact && business.contactBlock)contact.innerText=business.contactBlock;const footer=document.querySelector("footer .container span:last-child");if(footer && business.footerText)footer.innerText=business.footerText;if(business.hoursText)toaApplyHoursText(business.hoursText);}
+function toaShowAnnouncement(text){let bar=document.getElementById("toaLiveAnnouncement");if(!bar){bar=document.createElement("div");bar.id="toaLiveAnnouncement";bar.className="top-strip";document.body.insertBefore(bar,document.body.firstChild);}bar.innerText=text;bar.style.display=text.trim()?"block":"none";}
+function toaApplyHoursText(text){const hoursBox=document.querySelector(".hours");if(!hoursBox)return;hoursBox.querySelectorAll(".hour-row").forEach(r=>r.remove());text.split(/\n+/).map(l=>l.trim()).filter(Boolean).forEach(line=>{const parts=line.split(":");const day=parts.shift()||"";const value=parts.join(":").trim();hoursBox.insertAdjacentHTML("beforeend",`<div class="hour-row"><strong>${toaEsc(day)}</strong><span>${toaEsc(value)}</span></div>`);});}
+function toaReadSpecialsFromDom(){return Array.from(document.querySelectorAll("#page-menu .menu-box.dark .menu-item")).map(item=>{const spans=item.querySelectorAll(".menu-row span");return {name:spans[0]?.innerText||"",price:spans[1]?.innerText||"",desc:item.querySelector("p")?.innerText||""};}).filter(x=>x.name||x.price||x.desc);}
+function toaTagMenuItems(){Array.from(document.querySelectorAll("#page-menu .entree-card-clean, #page-menu .side-pill-clean, #page-menu .menu-box:not(.dark) .menu-item")).forEach((item,i)=>{item.dataset.toaMenuItem=i;});}
+function toaReadMenuFromDom(){toaTagMenuItems();return Array.from(document.querySelectorAll("[data-toa-menu-item]")).map(item=>({name:item.querySelector("h4,strong,.menu-row span:first-child")?.innerText||"",tag:item.querySelector(".mini-tag,.menu-row span:last-child")?.innerText||"",desc:item.querySelector("p,span:not(.mini-tag)")?.innerText||""}));}
+function toaReadHoursFromDom(){return Array.from(document.querySelectorAll(".hours .hour-row")).map(r=>`${r.querySelector("strong")?.innerText||""}: ${r.querySelector("span")?.innerText||""}`).join("\n");}
+function toaEsc(str){return String(str||"").replace(/[&<>"']/g,s=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[s]));}
+function toaExportWebsite(){alert("Export is no longer needed for menu, prices, hours, specials, photos, or announcements. Use the live Save buttons. Only code/design changes need a Netlify redeploy.");}
+window.addEventListener("load",toaFetchLiveContent);
+</script></body></html>
